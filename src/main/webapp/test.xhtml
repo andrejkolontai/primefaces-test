@@ -15,6 +15,22 @@
         <h:form id="frmTest">
 
         </h:form>
+        
+        <h:panelGrid columns="2">
+        	<h:outputText value="original resource URL from my project:"/>
+        	<h:outputText value="#{testView.jakartaResourceURL}"/>
+
+        	<h:outputText value="javax variant of resource URL from my project:"/>
+        	<h:outputText value="#{testView.javaxResourceURL}"/>
+        	
+        	<h:outputText value="original after ResourceUtils (should not be changed):"/>
+        	<h:outputText value="#{testView.jakartaFromResourceUtils}"/>
+
+        	<h:outputText value="javax variant after ResourceUtils (should be changed):"/>
+        	<h:outputText value="#{testView.javaxFromResourceUtils}"/>
+
+
+        </h:panelGrid>
 
     </h:body>
 </html>
